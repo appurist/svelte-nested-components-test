@@ -1,0 +1,14 @@
+{
+  "name": "svelte-nested-components-test",
+  "version": "1.0.0",
+  "description": "Svelte example with a nested component, immediately loadable in JS/HTML",
+  "main": "index.html",
+  "scripts": {
+    "clean": "del /Q dist\\*.*",
+	"build": "svelte compile -f iife -i components -o dist -m & copy index.html dist",
+	"dev": "svelte compile -f iife -i components -o dist -m -d & copy index.html dist",
+    "test": ""
+  },
+  "author": "",
+  "license": "MIT"
+}

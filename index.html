@@ -1,0 +1,18 @@
+<html>
+<head>
+  <title>Nested Svelte app</title>
+</head>
+<body>
+  <app></app>
+  <script src='./Nested.js'></script>
+  <script src='./App.js'></script>
+  <script>
+    var app = new App({
+      target: document.querySelector( 'app' ),
+      data: {
+        title: 'Nested Component Test'
+      }
+    });
+  </script>
+</body>
+</html>

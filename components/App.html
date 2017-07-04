@@ -1,0 +1,15 @@
+<h2>{{title}}</h2>
+<p>This is a top-level element.</p>
+<Nested>Inside the component.</Nested>
+<Nested>Inside the second component.</Nested>
+<Nested/>
+
+<script>
+	import Nested from './Nested.js';
+
+	export default {
+		components: {
+			Nested
+		}
+	};
+</script>
